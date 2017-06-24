@@ -10,6 +10,7 @@
         <junit-version>4.12</junit-version>
         <fixture-factory-version>3.1.0</fixture-factory-version>
         <orika-core-version>1.5.1</orika-core-version>
+        <archaius-core-version>0.6.0</archaius-core-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -29,6 +30,12 @@
                 <artifactId>orika-core</artifactId>
                 <version>${orika-core-version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.netflix.archaius</groupId>
+                <artifactId>archaius-core</artifactId>
+                <version>${archaius-core-version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -43,6 +50,10 @@
         <dependency>
             <groupId>ma.glasnost.orika</groupId>
             <artifactId>orika-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.archaius</groupId>
+            <artifactId>archaius-core</artifactId>
         </dependency>
     </dependencies>
     <build>
