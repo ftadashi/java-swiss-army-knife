@@ -12,6 +12,7 @@
         <orika-core-version>1.5.1</orika-core-version>
         <archaius-core-version>0.6.0</archaius-core-version>
         <blitz4j-version>1.36.2</blitz4j-version>
+        <disruptor-version>3.3.6</disruptor-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -48,6 +49,15 @@
                 <artifactId>blitz4j</artifactId>
                 <version>${blitz4j-version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${disruptor-version}</version>
+            </dependency>
+            <!--
+            http://www.baeldung.com/tracing-services-with-zipkin
+            https://github.com/openzipkin/zipkin/tree/master/zipkin-server
+            -->
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -78,6 +88,10 @@
         <dependency>
             <groupId>com.netflix.blitz4j</groupId>
             <artifactId>blitz4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
         </dependency>
     </dependencies>
     <build>
