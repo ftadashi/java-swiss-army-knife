@@ -58,6 +58,11 @@
             http://www.baeldung.com/tracing-services-with-zipkin
             https://github.com/openzipkin/zipkin/tree/master/zipkin-server
             -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-core</artifactId>
+                <version>9.5.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
