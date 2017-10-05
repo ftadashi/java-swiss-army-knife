@@ -13,6 +13,7 @@
         <archaius-core-version>0.6.0</archaius-core-version>
         <blitz4j-version>1.36.2</blitz4j-version>
         <disruptor-version>3.3.6</disruptor-version>
+        <jhm-version>1.9</jhm-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -58,6 +59,16 @@
             http://www.baeldung.com/tracing-services-with-zipkin
             https://github.com/openzipkin/zipkin/tree/master/zipkin-server
             -->
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jhm-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jhm-version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -92,6 +103,14 @@
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
         </dependency>
     </dependencies>
     <build>
