@@ -13,6 +13,7 @@
         <archaius-core-version>0.6.0</archaius-core-version>
         <blitz4j-version>1.36.2</blitz4j-version>
         <disruptor-version>3.3.6</disruptor-version>
+        <karate-version>0.6.0</karate-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -58,6 +59,11 @@
             http://www.baeldung.com/tracing-services-with-zipkin
             https://github.com/openzipkin/zipkin/tree/master/zipkin-server
             -->
+            <dependency>
+                <groupId>com.intuit.karate</groupId>
+                <artifactId>karate-apache</artifactId>
+                <version>${karate-version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -92,6 +98,10 @@
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
         </dependency>
     </dependencies>
     <build>
